@@ -1,0 +1,337 @@
+{
+  "project" : {
+    "id" : "bank_bot-1000109473-Yea",
+    "name" : "bank_bot-1000109473-Yea",
+    "folder" : "/platform"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "Europe/Moscow",
+    "extendedSettings" : {
+      "tokenizerEngine" : "mystem",
+      "useShared" : false
+    },
+    "shared" : false,
+    "validation" : {
+      "phraseValidationEnabled" : true,
+      "answerValidationEnabled" : true,
+      "phraseValidationThreshold" : 0.5,
+      "answerValidationThreshold" : 0.8
+    }
+  },
+  "intents" : [ {
+    "path" : "/выбор действия",
+    "answer" : " Сейчас расскажу порядок действий.\n Выберите, что именно планируете сделать:\n            1. Поменять пароль для входа в приложение.\n            2. Поменять PIN-код от карты.\n\nПожалуйста, отправьте в чат цифру, соответствующую вашему выбору.",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "изменить пароль"
+    }, {
+      "text" : "сменить пароль"
+    }, {
+      "text" : "узнать пароль"
+    }, {
+      "text" : "пароль"
+    }, {
+      "text" : "мой пароль"
+    }, {
+      "text" : "пин"
+    }, {
+      "text" : "забыла пин"
+    }, {
+      "text" : "не могу зайти"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Новый вопрос",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "New question"
+    }, {
+      "text" : "Новый вопрос"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ 1",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/приложение",
+    "answer" : "Пожалуйста, сделайте следующее:\n\n1) Зайдите в личный кабинет на сайте или в приложении. Нажмите на «Настройки».\n2) Выберите «Безопасность и доступы» \n3) Укажите новые данные для входа в приложение\n4) Нажмите «Сохранить». \n\nПроцедура завершена. Можно пользоваться!",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "1"
+    }, {
+      "text" : "один"
+    }, {
+      "text" : "первая"
+    }, {
+      "text" : "первый вариант"
+    }, {
+      "text" : "вариант один"
+    }, {
+      "text" : "приложение"
+    }, {
+      "text" : "вход"
+    }, {
+      "text" : "открыть приложение"
+    }, {
+      "text" : "приложение"
+    }, {
+      "text" : "личный кабинет"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/смена пина",
+    "answer" : "Это можно сделать в приложении:\n\n1. На экране «Мои деньги» в разделе «Карты» нажмите на нужную.\n2. Выберите вкладку «Настройки».\n3. Нажмите «Сменить PIN-код».\n4. Введите удобную вам комбинацию.\n5. Повторите ее.\n\nВсё работает, можно пользоваться!)\n",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "2"
+    }, {
+      "text" : "вариант два"
+    }, {
+      "text" : "два"
+    }, {
+      "text" : "второй"
+    }, {
+      "text" : "номер два"
+    }, {
+      "text" : "от карты"
+    }, {
+      "text" : "для карты"
+    }, {
+      "text" : "карте"
+    }, {
+      "text" : "для карты"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/пока",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "пока"
+    }, {
+      "text" : "до свидания"
+    }, {
+      "text" : "до встречи"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/привет",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "привет"
+    }, {
+      "text" : "здравствуйте"
+    }, {
+      "text" : "добрый день"
+    }, {
+      "text" : "добрый вечер"
+    }, {
+      "text" : "хай"
+    }, {
+      "text" : "доброе утро"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ 1/Root/Новый вопрос",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "New question"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/спасибо",
+    "answer" : "Было приятно с вами пообщаться! Если что, пишите, отвечу на все вопросы!",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "спасибо"
+    }, {
+      "text" : "благодарю"
+    }, {
+      "text" : "всё получилось"
+    }, {
+      "text" : "ура"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  } ],
+  "entities" : [ ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
+  "spellerDictionary" : [ ],
+  "systemEntities" : [ {
+    "name" : "mystem.geo",
+    "enabled" : false
+  }, {
+    "name" : "mystem.persn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.obsc",
+    "enabled" : false
+  }, {
+    "name" : "mystem.patrn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.famn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.romn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.latn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.numb",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.intg",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.abbr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.name",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.surn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.patr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.geox",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.orgn",
+    "enabled" : false
+  }, {
+    "name" : "duckling.number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.ordinal",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.amount-of-money",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.distance",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.date",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time-of-day",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.duration",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.phone-number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.email",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.url",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.interval",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "mlps-obscene.obscene",
+    "enabled" : false
+  }, {
+    "name" : "zb.datetime",
+    "enabled" : false
+  }, {
+    "name" : "zb.number",
+    "enabled" : false
+  } ],
+  "faq" : [ {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Новый вопрос",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "",
+      "markup" : "plain"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ 1",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ 1/Root/Новый вопрос",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "",
+      "markup" : "plain"
+    } ]
+  } ],
+  "skills" : [ ]
+}

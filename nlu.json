@@ -1,7 +1,7 @@
 {
   "project" : {
-    "id" : "bank_bot-1000109473-Yea",
-    "name" : "bank_bot-1000109473-Yea",
+    "id" : "otkritie_bank_bot-1000109473-zsZ",
+    "name" : "otkritie_bank_bot-1000109473-zsZ",
     "folder" : "/platform"
   },
   "settings" : {
@@ -94,6 +94,8 @@
       "text" : "приложение"
     }, {
       "text" : "личный кабинет"
+    }, {
+      "text" : "для входа в приложение"
     } ],
     "classificationRules" : {
       "refs" : [ ]
@@ -131,6 +133,7 @@
     "priority" : 0
   }, {
     "path" : "/пока",
+    "answer" : "До встречи!",
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
@@ -139,6 +142,8 @@
       "text" : "до свидания"
     }, {
       "text" : "до встречи"
+    }, {
+      "text" : "до скорого"
     } ],
     "classificationRules" : {
       "refs" : [ ]
